@@ -1,6 +1,6 @@
 # compose-wireguard-deluge
 
-a multi-container Docker application to run [Deluge](https://hub.docker.com/r/linuxserver/ipfs) behind a [Wireguard](https://hub.docker.com/r/linuxserver/wireguard) client
+a multi-container Docker application to run [Deluge](https://hub.docker.com/r/linuxserver/deluge) behind a [Wireguard](https://hub.docker.com/r/linuxserver/wireguard) client
 
 ## how to set it up
 
