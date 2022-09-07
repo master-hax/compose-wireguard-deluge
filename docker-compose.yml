@@ -55,12 +55,12 @@ volumes:
     driver_opts:
         type: tmpfs
         device: tmpfs
-  wgclient-data-volume: # writeable location of wg0.conf
+  wgclient-data-volume: # (required) writeable location of wg0.conf
     driver: local
     driver_opts:
         o: bind
         type: none
-        device: "$PWD/wireguard/"
+        device: "$PWD/wireguard/" # make this folder & drop in wireguard client config named "wg0.conf"
 
 networks:
   default:
