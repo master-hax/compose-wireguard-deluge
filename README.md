@@ -16,7 +16,8 @@ the Deluge web UI should be accessible at http://localhost:8112
 
 if you want to use this persistently, you should probably
 1. change the locations of the `deluge-data-volume` & `downloads-volume`
-1. forward a port with your VPN provider, add port forwarding to your `wg0.conf` using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782), then set up that same port in Deluge as the incoming port.
+1. forward a port with your VPN provider
+1. (probably not required) add port forwarding to your `wg0.conf` using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782), then set up that same port in Deluge as the incoming port.
 
 ## how it works
 
