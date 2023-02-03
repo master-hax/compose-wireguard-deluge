@@ -2,7 +2,7 @@ version: "3.7"
 services:
 
   torrent-client:
-    image: lscr.io/linuxserver/deluge
+    image: linuxserver/deluge
     restart: unless-stopped
     network_mode: service:vpn-sidecar
     depends_on:
@@ -32,7 +32,7 @@ services:
       - /var/cache/nginx
 
   vpn-sidecar:
-    image: lscr.io/linuxserver/wireguard
+    image: linuxserver/wireguard
     restart: unless-stopped
     networks:
       - isolated_torrent_network
