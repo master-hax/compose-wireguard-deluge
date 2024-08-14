@@ -2,6 +2,8 @@
 
 a multi-container Docker application to run [Deluge](https://hub.docker.com/r/linuxserver/deluge) behind a [Wireguard](https://hub.docker.com/r/linuxserver/wireguard) client
 
+WARNING: due to a docker limitation, some network traffic can escape before wireguard connects. to fix this, you should move the wireguard container **to a separate compose file**
+
 ## how to set it up
 
 1. download [docker-compose.yml](/docker-compose.yml)
