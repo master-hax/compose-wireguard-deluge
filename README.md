@@ -20,6 +20,7 @@ if you want to use this persistently, you should probably
 1. change the locations of the `deluge-data-volume` & `downloads-volume`
 1. forward a port with your VPN provider
 1. (probably not required) add port forwarding to your `wg0.conf` using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782), then set up that same port in Deluge as the incoming port.
+1. lock the containers to specific versions using sha256 digests e.g. `linuxserver/wireguard@sha256:39dd71c3440b93b3e0343aa88b8d415cf07a43e60df208cad6e55e7d2758959e`
 
 ## how it works
 
