@@ -3,7 +3,7 @@
 a multi-container Docker application to run [Deluge](https://hub.docker.com/r/linuxserver/deluge) behind a [Wireguard](https://hub.docker.com/r/linuxserver/wireguard) client
 
 > [!WARNING]  
-> due to a docker limitation, some network traffic can escape before wireguard connects. to fix this, you should move the wireguard container **to a separate compose file**
+> due to a docker limitation, some network traffic can escape before wireguard connects. to fix this, you should move the wireguard container **to a separate compose file**. See https://github.com/linuxserver/docker-wireguard/issues/139 for more info.
 
 ## how to set it up
 
